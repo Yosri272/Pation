@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/halaby"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <EditText
+        android:id="@+id/yo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="اسم المريض" />
+
+    <EditText
+        android:id="@+id/d2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yo1"
+        android:layout_centerHorizontal="true"
+        android:hint="اسم المستخدم" />
+
+    <EditText
+        android:id="@+id/d6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/d2"
+        android:hint="ارقم الهاتف"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/d3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:hint="كلمة المرور" />
+
+    <EditText
+        android:id="@+id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="اعادة كلمة المرور" />
+
+    <EditText
+        android:id="@+id/p3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/d6"
+        android:hint="البريد الالكروني"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/p5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="but11"
+        android:background="@drawable/rio"
+
+        android:text="انشاء الحساب" />
+
+    <EditText
+        android:id="@+id/p8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:ems="10"
+        android:hint="تاريخ الميلاد"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/p3"
+        android:layout_alignRight="@+id/p3"
+        android:layout_below="@+id/p3"
+        android:text="النوع"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:baselineAligned="false"
+        android:onClick="but12"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="right"
+            android:layout_weight="1.46"
+            android:checked="true"
+            android:onClick="fathi1"
+            android:text="ذكر" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p3"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.21"
+            android:checked="false"
+            android:onClick="fathi"
+            android:text="انثي" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

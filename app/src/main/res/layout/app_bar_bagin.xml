@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/halaby"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:src="@drawable/imagess" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0.17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البحث بالتخصص"
+            android:id="@+id/textView2"
+            android:layout_gravity="right"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/rio"
+            />
+
+        <Spinner
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinner"
+            android:layout_above="@+id/p"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="56dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            />
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0.30">
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:background="@drawable/rio"
+            />
+
+        <Spinner
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_above="@+id/p"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="56dp"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:layout_row="0"
+            android:background="@drawable/rio"
+            android:text="البحث بالعنوان" />
+
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0.17"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البحث بالمحلية"
+            android:id="@+id/textView12"
+            android:layout_gravity="right"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/rio"
+            />
+
+        <Spinner
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinner12"
+            android:layout_above="@+id/p"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="56dp"
+            android:layout_row="4"
+            android:layout_column="1" />
+    </GridLayout>
+
+
+    <EditText
+        android:id="@+id/p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="أسم الطبيب" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:elevation="1dp"
+        android:onClick="btn111"
+        android:text="أبحث عن الطبيب"
+        android:background="@drawable/rio"
+        />
+
+
+
+</LinearLayout>
